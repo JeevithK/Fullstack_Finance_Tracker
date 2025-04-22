@@ -21,7 +21,7 @@ const Recorddelete = () => {
     const fetchdata = async () => {
       try {
         const res = await axios.get(
-          `https://fullstack-finance-tracker.onrender.com/${id}`,
+          `https://fullstack-finance-tracker.onrender.com/getrecordbyid/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ const Recorddelete = () => {
   const handledelete = async (e) => {
     e.preventDefault();
     try {
-      await axios.delete(`https://fullstack-finance-tracker.onrender.com/${id}`,{
+      await axios.delete(`https://fullstack-finance-tracker.onrender.com/deleterecord/${id}`,{
             headers: {
               Authorization: `Bearer ${token}`,
             },

@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173", // or your frontend URL
+    origin: "https://fullstack-finance-tracker-grk2.onrender.com", // or your frontend URL
     credentials: true,
   })
 );

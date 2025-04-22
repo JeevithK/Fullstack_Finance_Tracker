@@ -16,7 +16,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5001/auth/register",
+        "https://fullstack-finance-tracker.onrender.com/auth/register",
         formData
       );
       toast.success(res.data.message);

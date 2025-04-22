@@ -32,7 +32,7 @@ const Recordedit = () => {
     const fetchdata = async () => {
       try {
         const res = await axios.get(
-          `https://fullstack-finance-tracker.onrender.com/${id}`,
+          `https://fullstack-finance-tracker.onrender.com/getrecordbyid/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -62,7 +62,7 @@ const Recordedit = () => {
       const formatteddate = convertToDDMMYYYY(recdet.date);
       setrecdet((prev) => ({ ...prev, date: formatteddate }));
 
-      await axios.put(`https://fullstack-finance-tracker.onrender.com/${id}`, recdet, {
+      await axios.put(`https://fullstack-finance-tracker.onrender.com/editrecord/${id}`, recdet, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

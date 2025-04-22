@@ -19,7 +19,7 @@ const Dashboard = () => {
     }
 
     try {
-      const res = await axios.get("http://localhost:5001/getallrecord", {
+      const res = await axios.get("https://fullstack-finance-tracker.onrender.com/getallrecord", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

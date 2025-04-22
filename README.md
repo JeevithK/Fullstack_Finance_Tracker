@@ -4,7 +4,7 @@ A simple full-stack Expense Tracker app to add, view, and delete expenses.
 
 ## 🔗 Live Links
 
-- **Link**: [https://yardstick-finance-tracker-2.onrender.com](https://fullstack-finance-tracker-grk2.onrender.com/auth/login)
+- **Link**: [Experience it ](https://fullstack-finance-tracker-grk2.onrender.com/auth/login)
 
 
 ## ⚙️ Stack

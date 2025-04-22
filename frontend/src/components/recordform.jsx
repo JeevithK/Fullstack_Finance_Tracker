@@ -38,7 +38,7 @@ const Recordform = ({ fetchRecords }) => {
       setFormData((prev) => ({ ...prev, date: formatteddate }));
 
       const postrecord = await axios.post(
-        "http://localhost:5001/createrecord",
+        "https://fullstack-finance-tracker.onrender.com/createrecord",
         formData,
         {
           headers: {
